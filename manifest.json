@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "Fundamenta",
+    "description": "INDEXADOR DE FUNDAMENTOS JURÍDICOS ",
+    "author": "Renan Fantinelli",
+    "browser_action": {
+        "default_title": "fundamenta"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "index.js"
+        ]
+        
+    }
+    
+}

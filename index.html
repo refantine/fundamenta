@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="google" content="notranslate">
+    <meta charset="utf-8" /> 
+    <title>Fundamenta</title>
+    <link rel="stylesheet" href="bootstrap.min.css" >
+    <style>
+    @font-face{
+    font-family:'Glyphicons Halflings';
+    src:url('glyphicons-halflings-regular.woff') format('woff')}
+    .glyphicon{position:relative;top:1px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;}
+    .glyphicon-share-alt:before{content:"\e095";}
+    .glyphicon-cog:before{content:"\e019";}
+    .glyphicon-trash:before{content:"\e020";}
+    section{padding: 7rem 0;}#resultado{background:#222;color:#fff;}#fundamentos{background:#706b63;color:#fff;}.label{font-weight: bold;}.tag{padding: 10;background: #000;color: #fff;}
+    .logo{color: #706b63;}.logo h2{float: left;}.logo span{font-size: 11px;color: #222;float:left;clear:left}.logo:hover{text-decoration: none;color:#4a4a4a}.navbar-item{color: #4a4a4a;}
+    </style>
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="logo" href="#">
+                <h2 class='mr-1'>
+                    FUNDAMENTA
+                </h2>
+                <h2 class='mt-2'>
+                    <span>AUXILIADOR</span>
+                    <span>JURÍDICO</span>
+                </h2>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-end">
+            <!--a class="navbar-item" href="#codigos">Códigos</a-->
+            <a class="navbar-item" href="#sobre">Sobre</a>
+        </div>
+     </div>
+</nav>
+<section id="fundamentos">
+    <div class="container">
+        <form id="dosf" class="row">
+            <div class="col-md-2">
+                <p>
+                    <br><br>
+                    <h1 class="text-center"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span></h1>
+                    <big>Descreva os fatos sem abreviações,  ou carregue um <a class="exemplo"><u>exemplo</u></a> para começar.</big>
+                </p>
+            </div>
+            <div class="col-md-8">
+                <label class="label">Dos fatos</label>
+                <textarea id="dosfatos" class="form-control" style="height:350px;"
+                data-exemplo='"A" conduzia seu veículo automotor em via pública, com capacidade psicomotora alterada em razão da influência de bebida alcoólica ingerida durante uma festa em que se encontrava; diante disso, a pessoa de "A", ao deixar a referida festa, na direção de seu veículo automotor, acabou por colidir com a pessoa de "B", ciclista, que conduzia sua bicicleta em sentido oposto da via em que trafegava a pessoa de "A"; desta colisão, a pessoa de "B", mesmo socorrida, não resistiu aos ferimentos e veio a óbito.'></textarea>
+                <div style="position:absolute;right:30px;bottom:10px;">
+                    <button type="button" class="config btn btn-default mb-1" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                    </button>
+                    <br>
+                    <button type="button" class="limpa btn btn-default" aria-label="Left Align">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-2 text-center">
+                <br><br>
+                <input id="keywords" type="checkbox"/> <label class="label">Palavras-Chave</label>
+                <label class="label">Codificação jurídica</label>
+                <select id="codjur" class="form-control" multiple style="height:150px;" >
+                    <option disabled>- Selecione -</option>
+                    <option value="cc">CC</option>
+                    <option value="cpc">CPC</option>
+                    <option value="cp" selected>CP</option>
+                    <option value="cpp">CPP</option>
+                    <option value="cf">CF</option>
+                </select>
+                <br>
+                <label class="label">Jurisprudência</label>
+                <select class="form-control" disabled>
+                    <option selected>- Em breve -</option>
+                </select>
+
+            </div>
+            <div class="col-md-12 text-center">
+                <br>
+                <button type="button" class="fundamenta btn">Fundamenta</button>
+            </div>
+        </form>
+    </div>
+</section>
+<section id="resultado">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <label class="label"> Dos Fundamentos</label>
+                <div id="dosfundamentos">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+<section id="sobre">
+    <div class="container text-center">
+       <h2 class="title">SOBRE</h2>
+       <hr>
+        <div class="row">
+           <div class="col-md-1"></div>
+           <div class="col-md-10  text-center">
+            <span>
+                Projeto apresentado perante o Centro Universitário de Maringá - Unicesumar para a qualificação do título de Especialização na Pós Graduação em Desenvolvimento Web.
+            </span>
+           </div>
+           <div class="col-md-1"></div>
+        </div>
+    </div>
+</section>
+<script src="index.js"></script>
+</body>
+</html>
